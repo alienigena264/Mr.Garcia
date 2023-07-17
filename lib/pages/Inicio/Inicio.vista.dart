@@ -92,7 +92,6 @@ class _InicioState extends State<Inicio> {
 
   void pasar() {
     // Lógica de la función "pasar"
-    print('Se ejecutó la función "pasar" después de 10 segundos');
     Navigator.pushNamed(context, '/InicioInfo1');
   }
 }
