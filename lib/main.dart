@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mr_garcia_app/pages/Inicio/Inicio.vista.dart';
 import 'package:mr_garcia_app/pages/Inicio/InicioInfo1.vista.dart';
+import 'package:mr_garcia_app/pages/Log/Log_General.vista.dart';
 
 
 void main() => runApp(const MyApp());
@@ -16,7 +17,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Inicio(),
-        '/InicioInfo1': (context) => const InicioInfo1(),
+        // ignore: prefer_const_constructors
+        '/InicioInfo1': (context) => InicioInfo1(),
+        '/logGeneral': (context) => const LogGeneral()
         
         
       },
