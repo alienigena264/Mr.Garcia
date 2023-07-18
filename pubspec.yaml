@@ -38,6 +38,8 @@ dependencies:
   auto_size_text: ^3.0.0
   flutter_sequence_animation: "^4.0.0"
   curved_navigation_bar: ^1.0.3
+  url_launcher: ^6.1.11
+  email_validator: ^2.1.17
 
 dev_dependencies:
   flutter_test:

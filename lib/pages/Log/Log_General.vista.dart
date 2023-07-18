@@ -72,26 +72,32 @@ class _LogGeneralState extends State<LogGeneral> {
             const SizedBox(
               height: 30,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  '¿No tienes una cuenta?',
-                  style: TextStyle(color: Colors.white, fontSize: 15),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Registrate',
-                    style: TextStyle(color: colorSecundario, fontSize: 15),
-                  ),
-                ),
-              ],
-            ),
+            registrarse(),
           ],
         ),
       ),
     );
+  }
+
+  Row registrarse() {
+    return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                '¿No tienes una cuenta?',
+                style: TextStyle(color: Colors.white, fontSize: 15),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/Registrar');
+                },
+                child: const Text(
+                  'Registrate',
+                  style: TextStyle(color: colorSecundario, fontSize: 15),
+                ),
+              ),
+            ],
+          );
   }
 
   Row divider(double screenWidth) {
