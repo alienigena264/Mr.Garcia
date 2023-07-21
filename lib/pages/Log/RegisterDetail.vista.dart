@@ -327,7 +327,7 @@ class _RegisterDateilState extends State<RegisterDateil> {
           minimumSize: const Size(340, 55),
           // double.infinity is the width and 30 is the height
           shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(2.0)),
         ),
         onPressed: () {
         },
